@@ -1,0 +1,72 @@
+/* Hi Image */
+.hi{
+    animation-duration: 3s;
+    animation-name: drop-in;
+    animation-iteration-count: 1;
+}
+@keyframes drop-in {
+    from {
+      transform:
+        rotate(-40deg) translateY(-100%);
+      opacity: 0;
+    }
+    to {
+      transform:
+        rotate(0deg) translateY(0%);
+      opacity: 1;
+    }
+  }.about{
+    animation-name: fadeIn;
+    animation-duration: 20s;
+}
+@keyframes fadeIn{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+  }
+  .fa{
+    animation-name: fadeIn;
+    animation-duration: 20s;
+  }
+  @keyframes fadeIn{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+  }
+  .progress-bar{
+    animation: load 5s 2;
+  }
+  @keyframes load{
+    0%{
+        width: 0%;
+        background-color: #c95272;
+    }
+    50%{
+        width: 50%;
+        background: #a0d2eb;
+    }
+    70%{
+        width: 70%;
+        background: #494d5f;
+    }
+    100%{
+        width: 100%;
+        background: #d0bdf4;
+    }
+
+  }
+
+  @media screen and (max-width: 768px) and (min-width: 400px) {
+    .hi{
+      width: 50%;
+    } 
+    .about{
+      width: 70%;
+    }
+  }
